@@ -1,0 +1,131 @@
+@mixin defaultProp
+    height: 220px
+    border: 2mm ridge rgba(139, 7, 7, .6)
+    margin: 5% 8%
+
+body
+    width: 100%
+    height: 100%
+    padding: 0% 5%
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+    background-color: orange
+
+header
+    border: 4px solid black
+    background-color: yellow
+    height: 100px
+    padding: 0 1%
+    nav
+        height: 50%
+        margin: 3% 1%
+        border: 4px solid black
+        background-color: blue
+        a
+            color: #fff
+
+br
+    margin: 2%
+
+span
+    color: #fff
+
+#magick1
+    &:checked ~ #case1
+        background-color: red
+        color: yellow
+    &:checked ~ #case2
+        border-color: green
+
+iframe
+	width: 377px
+	height: 100%
+	margin-left: -4.5%
+
+label
+    margin-right: 2%
+
+form
+    br
+        margin: 3%
+
+textarea
+    resize: none
+    width: 80%
+
+#case1
+    @include defaultProp
+    background-color: purple
+    color: #fff
+
+#case2
+    @include defaultProp
+    background-image: url("/img/pug.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-color: #fff
+
+#case3
+    @include defaultProp
+
+#case4
+    @include defaultProp
+    background-color: #2047cd
+    color: #fff
+
+#case5
+    @include defaultProp
+    width: 220px
+    margin: 5%
+    margin-left: 15%
+    margin-right: 15.5%
+    overflow: hidden
+    border-radius: 50%
+    background-image: url("/img/nodejs.png")
+    background-repeat: no-repeat
+    background-position: center
+
+#case6
+    @include defaultProp
+
+@media screen and (max-width: 480px)
+    iframe
+    	width: 228px
+    	height: 100%
+    	margin-left: -15px
+
+footer
+    border: 4px solid black
+    background-color: #8e1a01
+    padding: 1%
+    p
+        color: #fff
+    a
+        border: none
+        color: #fff
+        &:hover
+            color: green
+
+
+#masterCase
+    margin: 10% 0%
+    padding: 0
+    border: 2mm ridge black
+    background-color: #fff
+    height: 230px
+
+    .game
+        margin: 2% 0%
+    #play
+        margin: 1% 10%
+
+    .col-md-4
+        border-left: 2mm ridge black
+        background-color: #974848
+        height: 100%
+        margin: 0
+
+        #iconePlayer
+            width: 180px
+            height: 180px
+            background-image: url('/img/random.jpeg')
+            margin: 5% 25%

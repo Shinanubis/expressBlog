@@ -1,0 +1,34 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous")
+        link(rel="stylesheet", href="/css/style.css")
+        block extraHeader
+    body
+        header.header.clearfix 
+            nav 
+                ul.nav.nav-pills.pull-right 
+                    li
+                        a(href="/") Home
+                    li
+                        a(href="withoutJs") game without js
+                    li 
+                        a(href="russianRoulette") game
+        block content
+        footer.container
+            div.col-md-4
+                p   this is a paragraphe
+                    br
+                    | with some text
+                    br
+                    | for derscription
+            div.col-md-4
+                p   this is another text
+                    br
+                    | with different info
+            div.col-md-4
+                a(href="mailto:contact@monsite.com") contact@monsite.com
+        
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+            script(src="/js/russianRoulette.js")

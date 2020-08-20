@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    div.container
+        section.row
+            input#magick1(type="checkbox")
+            span Try me
+            div.col-md-4#case1
+                p   This is the first case of this SUPER site
+                    br
+                    | it's make with pug old named jade
+                    br
+                    | You'll love it in the futur
+                br
+            div.col-md-4#case2
+        section.row
+            div.col-md-4#case3
+                iframe(src="https://www.youtube.com/embed/3x4OifUYCro")
+            div.col-md-4#case4
+                p   This is a small video on pug
+                    br
+                    | enjoy with it and try hard !
+        section.row
+            div.col-md-4#case5
+            div.col-md-4#case6
+                form(method='POST', action='contact')
+                    label(for="name") Your Name: 
+                    input(type="text" id="name" name="name" placeholder="Your name.." required)
+                    br
+                    label(for="email") Your email: 
+                    input(type="email" id="mail" name="mail" placeholder="Your mail.." required)
+                    br
+                    label(for="message") Your message:
+                    textarea(name="conent" placeholder="Please enter your message.." required)
+                    br
+                    button(type="submit" value="Submit") Send
+                

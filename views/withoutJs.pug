@@ -1,0 +1,32 @@
+extends layout
+
+block extraHeader
+    link(rel="stylesheet", href="/css/withoutJs.css")
+
+block content
+
+    div.container#masterCase
+        div.col-md-8
+            div.row.game
+                H3 Welcome to this fabulous game
+                p This game is a random name's picker for select name to make a watch
+            div.row.game
+                p Please click on the button to start the roulette
+                    label(for="d1") click on me 
+                    label(for="d2") click on me 
+                    label(for="d3") click on me 
+                    label(for="d4") click on me
+                    label(for="d5") click on me
+        div.col-md-4
+            input(type="radio" id="d1" name="dice")
+            input(type="radio" id="d2" name="dice")
+            input(type="radio" id="d3" name="dice")
+            input(type="radio" id="d4" name="dice")
+            input(type="radio" id="d5" name="dice")
+            p(id="random-value")
+
+                
+
+    
+    
+            

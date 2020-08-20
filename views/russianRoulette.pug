@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div.container#masterCase
+        div.col-md-8
+            div.row.game
+                H3 Welcome to this fabulous game
+                p This game is a random name's picker for select name to make a watch
+            div.row.game
+                p Please click on the button to start the roulette
+                button#play(onCLick="chooseName()") click on me 
+        div.col-md-4
+            img#iconePlayer(alt="random" src="/img/random.jpeg")
